@@ -19,8 +19,8 @@ export default function Login() {
     const endpoint = 'https://cloud.appwrite.io/v1';
     window.location.href = `${endpoint}?redirect_uri=${encodeURIComponent(redirectUri)}`;
 
-    const successUrl = 'http://localhost:3000/';
-    const failureUrl = 'http://localhost:3000/login';
+    const successUrl = 'https://vanilla2-gray.vercel.app/';
+    const failureUrl = 'https://vanilla2-gray.vercel.app/login';
 
     account.createOAuth2Session('google', successUrl, failureUrl);
   };
