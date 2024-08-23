@@ -2,7 +2,11 @@ import axios from "axios";
 
 const axiosClient = axios.create({
   baseURL: 'https://vanilla6.vercel.app',
-  withCredentials: true 
+  withCredentials: true,
+  headers: {
+    'X-Requested-With': 'XMLHttpRequest',
+    'Accept': 'application/json',
+  }
 });
 
 
