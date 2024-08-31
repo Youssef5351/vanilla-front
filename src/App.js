@@ -13,7 +13,7 @@ import TextAnimation from './Components/TextAnimation/TextAnimation.jsx';
 import Gradient from './Components/Gradient/Gradient.jsx';
 import CircleCursor from './Components/Cursor/Cursor.jsx';
 import Footer from './Components/Footer/Footer.jsx';
-
+import MaskScroll from "./Components/MaskScroll/MaskScroll.jsx"
 function App() {
   return (
     <Router>
@@ -38,12 +38,14 @@ function RouteHandler() {
           <Route path="/login" element={<Login />} />
           {/* Add other routes here if needed */}
         </Routes>
+        {showLayout && <MaskScroll/>}
         {showLayout && <Providers />}
         {showLayout && <CircleAnimation />}
         {showLayout && <TextAnimation />}
         {showLayout && <Gradient />}
         {showLayout && <Infinite />}
         {showLayout && <Footer />}
+
       </SmoothScroll>
     </>
   );
