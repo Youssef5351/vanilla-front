@@ -4,10 +4,10 @@ import "../../index.css";
 import iceCream from "../../assets/iceCream.mp4";
 
 const phrases = [
-  "Shaping Tomorrow's",
-  "Digital Landscape with",
-  "Unmatched Creativity",
-  "and Precision."
+  "Scooping Up",
+  "Sweet Moments with",
+  "Delicious Flavors",
+  "and Endless Joy!"
 ];
 
 const LandingPage = () => {
